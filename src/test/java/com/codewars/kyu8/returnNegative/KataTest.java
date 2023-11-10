@@ -1,8 +1,8 @@
-package com.codewars.returnNegative;
+package com.codewars.kyu8.returnNegative;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class KataTest {
     @Test

@@ -1,4 +1,4 @@
-package com.codewars.altERnaTIng;
+package com.codewars.kyu8.altERnaTIng;
 
 public class StringUtils {
     public static String toAlternativeString(String string) {
@@ -7,7 +7,7 @@ public class StringUtils {
         for (char ch : string.toCharArray()) {
             int value = ch;
 
-            if ((value >= 65 && value <= 90 ) || (value >= 97 && value <= 122)) {
+            if ((value >= 65 && value <= 90) || (value >= 97 && value <= 122)) {
                 value += value <= 90 ? 32 : -32;
             }
 

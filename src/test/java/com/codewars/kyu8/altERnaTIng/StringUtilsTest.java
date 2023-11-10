@@ -1,4 +1,4 @@
-package com.codewars.altERnaTIng;
+package com.codewars.kyu8.altERnaTIng;
 
 import org.junit.Test;
 

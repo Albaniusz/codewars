@@ -1,4 +1,4 @@
-package com.codewars.toSquareOrNotToSquare;
+package com.codewars.kyu8.toSquareOrNotToSquare;
 
 public class Kata {
     public static int[] squareOrSquareRoot(int[] array) {

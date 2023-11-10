@@ -1,4 +1,4 @@
-package com.codewars.toSquareOrNotToSquare;
+package com.codewars.kyu8.toSquareOrNotToSquare;
 
 import org.junit.Test;
 

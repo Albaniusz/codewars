@@ -1,4 +1,4 @@
-package com.codewars.evenOrOdd;
+package com.codewars.kyu8.evenOrOdd;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package com.codewars.hq9Plus;
+package com.codewars.kyu8.hq9Plus;
 
 import org.junit.Test;
 
