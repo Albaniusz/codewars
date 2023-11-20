@@ -19,4 +19,9 @@ public class WilsonPrimeTest {
     public void test3() {
         assertEquals(true, WilsonPrime.am_i_wilson(5));
     }
+
+    @Test
+    public void test4() {
+        assertEquals(false, WilsonPrime.am_i_wilson(345));
+    }
 }
