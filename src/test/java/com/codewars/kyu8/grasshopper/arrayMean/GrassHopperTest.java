@@ -1,4 +1,4 @@
-package com.codewars.kyu8.grasshopperArrayMean;
+package com.codewars.kyu8.grasshopper.arrayMean;
 
 import static org.junit.Assert.*;
 

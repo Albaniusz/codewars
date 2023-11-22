@@ -16,5 +16,19 @@ public class ReflectionsTest {
         assertArrayEquals(new int[]{-1014, -443}, reflectPoint(new int[]{1000, 15}, new int[]{-7, -214}));
         assertArrayEquals(new int[]{0, 0}, reflectPoint(new int[]{0, 0}, new int[]{0, 0}));
     }
+    @Test
+    void test1() {
+        assertArrayEquals(new int[]{-15, -15}, reflectPoint(new int[]{-5, -5}, new int[]{-10, -10}));
+    }
+
+    @Test
+    void test2() {
+        assertArrayEquals(new int[]{15, 15}, reflectPoint(new int[]{5, 5}, new int[]{10, 10}));
+    }
+
+    @Test
+    void test3() {
+        assertArrayEquals(new int[]{-5, -5}, reflectPoint(new int[]{5, 5}, new int[]{0, 0}));
+    }
 }
 
