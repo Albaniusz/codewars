@@ -1,4 +1,4 @@
-package com.codewars.kyu8.beConciseITheTernaryOperator;
+package com.codewars.kyu8.beConcise.theTernaryOperator;
 
 import org.junit.Test;
 
