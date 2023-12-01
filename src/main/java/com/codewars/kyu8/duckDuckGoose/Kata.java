@@ -21,6 +21,6 @@ package com.codewars.kyu8.duckDuckGoose;
 public class Kata {
     public static String duckDuckGoose(Player[] players, int goose) {
         int index = goose % players.length - 1;
-        return players[index < 0 ? players.length - 1 : index].getName();
+        return players[index < 0 ? players.length - 1 : index].name;
     }
 }

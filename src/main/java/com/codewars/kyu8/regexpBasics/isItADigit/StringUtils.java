@@ -8,6 +8,6 @@ import java.util.regex.Pattern;
  */
 public class StringUtils {
     public static boolean isDigit(String s) {
-        return Pattern.compile("^([0-9])$").matcher(s).find();
+        return Pattern.matches("^\\d$", s);
     }
 }

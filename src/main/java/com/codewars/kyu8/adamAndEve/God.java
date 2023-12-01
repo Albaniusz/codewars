@@ -9,19 +9,19 @@ package com.codewars.kyu8.adamAndEve;
  * Your job is to implement the Human, Man and Woman classes.
  */
 public class God {
-//    public static Human[] create() {
-//        return new Human[]{ new Man(), new Woman()};
-//    }
+    public static Human[] create() {
+        return new Human[]{new Man(), new Woman()};
+    }
 }
 
-//public class Human {
-//
-//}
-//
-//public class Man extends Human {
-//
-//}
-//
-//public class Woman extends Human {
-//
-//}
+class Human {
+
+}
+
+class Man extends Human {
+
+}
+
+class Woman extends Human {
+
+}

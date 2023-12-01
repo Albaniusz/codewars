@@ -56,37 +56,20 @@ public class Solution {
     private final static double LB = 0.453592;
 
     public static double solution(double[] arrVal, String[] arrUnit) {
-//        BigDecimal g = new BigDecimal(6.6734 * Math.pow(10, -11));
-//        BigDecimal mass1 = new BigDecimal(convertMass(arrVal[0], arrUnit[0]));
-//        BigDecimal mass2 = new BigDecimal(convertMass(arrVal[1], arrUnit[1]));
-//        BigDecimal distance = new BigDecimal(convertDistance(arrVal[2], arrUnit[2]));
-//
-//        // F = G * (m1 * m2) / r^2
-//        double result = g.multiply(mass1).multiply(mass2).divide(distance.pow(2), RoundingMode.UP).doubleValue();
-//
-//
-//
-//        DecimalFormatSymbols symbols = DecimalFormatSymbols.getInstance(Locale.US);
-//        symbols.setExponentSeparator("e");
-//        DecimalFormat formatter = new DecimalFormat("0.0E0", symbols);
-//        formatter.setRoundingMode(RoundingMode.HALF_UP);
-//        formatter.setMinimumFractionDigits(11);
-//        return Double.parseDouble(formatter.format(String.valueOf(result)));
-
-        double g = 6.6734 * Math.pow(10, -11);
+        double g = 6.67e-11;
         double mass1 = convertMass(arrVal[0], arrUnit[0]);
         double mass2 = convertMass(arrVal[1], arrUnit[1]);
         double distance = convertDistance(arrVal[2], arrUnit[2]);
 
         // F = G * (m1 * m2) / r^2
-        return (g * mass1 * mass2) / Math.pow(distance, 2);
+        return g * mass1 * mass2 / Math.pow(distance, 2);
     }
 
     private static double convertMass(double value, String unit) {
         return switch (unit) {
-            case "g" -> value * 1000d;
-            case "mg" -> value * 100000d;
-            case "μg" -> value * 1000000d;
+            case "g" -> value / 1000d;
+            case "mg" -> value / 1000000d;
+            case "μg" -> value / 1000000000d;
             case "lb" -> value * LB;
             default -> value;
         };
@@ -94,9 +77,9 @@ public class Solution {
 
     private static double convertDistance(double value, String unit) {
         return switch (unit) {
-            case "cm" -> value * 10d;
-            case "mm" -> value * 100d;
-            case "μm" -> value * 1000d;
+            case "cm" -> value / 100d;
+            case "mm" -> value / 1000d;
+            case "μm" -> value / 1000000d;
             case "ft" -> value * FT;
             default -> value;
         };
