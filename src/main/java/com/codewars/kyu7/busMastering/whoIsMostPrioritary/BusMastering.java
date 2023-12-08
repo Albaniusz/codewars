@@ -32,11 +32,11 @@ public class BusMastering {
         boolean first = true;
 
         for (int i = 0; i < n; i++) {
-            if (chars[i] == 1 && first) {
-                results[i] = 1;
+            if (chars[i] == '1' && first) {
+                results[i] = '1';
                 first = false;
             } else {
-                results[i] = 0;
+                results[i] = '0';
             }
         }
 

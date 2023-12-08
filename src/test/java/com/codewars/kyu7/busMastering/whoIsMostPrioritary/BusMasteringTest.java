@@ -14,6 +14,6 @@ public class BusMasteringTest {
 
     @Test
     public void custom() {
-        assertEquals(BusMastering.arbitrate("1", 1), "1");
+        assertEquals("1", BusMastering.arbitrate("1", 1));
     }
 }
