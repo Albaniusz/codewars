@@ -9,6 +9,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
+    <dir>${project.build.directory}</dir>
     <java.version>17</java.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
@@ -45,6 +46,14 @@
       <artifactId>guava</artifactId>
       <version>32.1.3-jre</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.17.0</version>
+    </dependency>
   </dependencies>
 
+  <build>
+    <directory>${dir}</directory>
+  </build>
 </project>
