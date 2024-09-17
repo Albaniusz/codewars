@@ -1,6 +1,5 @@
 package com.codewars.kyu6.the80sKids.shesSmallWonder;
 
-import com.codewars.kyu6.shesSmallWonder.Robot;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -42,4 +41,20 @@ public class RobotTest {
         assertEquals("I already know the word teaChing", vicky.learnWord("teaChing"));
         assertEquals("I already know the word Teaching", vicky.learnWord("Teaching"));
     }
+
+    @Test
+    public void wrongWords() {
+//        assertEquals("Thank you for teaching me wOrd", vicky.learnWord("wOrd"));
+        assertEquals("Thank you for teaching me", vicky.learnWord(""));
+        assertEquals("Thank you for teaching me", vicky.learnWord(""));
+    }
+
+    @Test
+    public void doThankWords() {
+        assertEquals("Thank you for teaching me do", vicky.learnWord("do"));
+        assertEquals("I already know the word do", vicky.learnWord("do"));
+        assertEquals("Thank you for teaching me thank", vicky.learnWord("thank"));
+        assertEquals("I already know the word thank", vicky.learnWord("thank"));
+    }
+
 }

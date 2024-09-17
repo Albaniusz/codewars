@@ -1,4 +1,4 @@
-package com.codewars.kyu6.shesSmallWonder;
+package com.codewars.kyu6.the80sKids.shesSmallWonder;
 
 import java.util.ArrayList;
 import java.util.Collections;
