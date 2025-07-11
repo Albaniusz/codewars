@@ -35,16 +35,6 @@ package com.codewars.kyu8.collinearity;
  */
 public class Kata {
     public static boolean collinearity(int x1, int y1, int x2, int y2) {
-        if ((x1 == 0 && y1 == 0) || (x2 == 0 && y2 == 0)) {
-            return true;
-        }
-        if (x2 == 0) {
-            x2 = 1;
-        }
-        if (y2 == 0) {
-            y2 = 1;
-        }
-
-        return Math.abs(x1 / x2) == Math.abs(y1 / y2);
+        return (x1 * y2) - (x2 * y1) == 0;
     }
 }
